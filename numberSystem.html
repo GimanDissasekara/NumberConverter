@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Converter</title>
+    <link rel="stylesheet" href="numberSystem.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>File Converter</h1>
+      <select id="conversionOption">
+        <option value="BtoD">Binary to Decimal</option>
+        <option value="BtoO">Binary to Octal</option>
+        <option value="BtoH">Binary to Hexaecimal</option>
+        <option value="DtoB">Decimal to Binary</option>
+        <option value="DtoO">Decimal to Octal</option>
+        <option value="DtoH">Decimal to Hexadecimal</option>
+        <option value="OtoB">Octal to Binary</option>
+        <option value="OtoD">Octal to Decimal</option>
+        <option value="OtoH">Octal to Hexadecimal</option>
+        <option value="HtoB">Hexadecimal to Binary</option>
+        <option value="HtoD">Hexadecimal to Decimal</option>
+        <option value="HtoO">Hexadecimal to Octal</option>
+      </select>
+      <input type="file" id="fileInput" />
+      <button id="convertButton">Convert</button>
+      <div id="output"></div>
+    </div>
+    <script src="numberSystem.js"></script>
+  </body>
+</html>
