@@ -29,7 +29,7 @@ def group_binary_and_convert_to_hex(binary_input):
 # binary_input = "10100.101"
 
 # Open the textfile and add numbers for a list
-f = open('HexaNumbers.txt','r')
+f = open('BinaryNumbers.txt','r')
 myNumList = []
 for line in f:
     myNumList.append(line.strip())

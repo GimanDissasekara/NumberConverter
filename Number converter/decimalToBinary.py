@@ -6,11 +6,11 @@ def decimal_to_binary(decimal_str):
     binary_integer = bin(int(integer_part))[2:]
 
     # Convert fractional part to binary
-    fractional_part_value = float('0.' + fractional_part)
+    fractional_part_value =float ('0.' + fractional_part)
     binary_fractional = ''
 
     # Calculate binary representation of fractional part
-    for _ in range(4):  # Considering 8 bits for fractional part
+    for x in range(8):  # Considering 8 bits for fractional part
         fractional_part_value *= 2
         bit = int(fractional_part_value)
         binary_fractional += str(bit)
