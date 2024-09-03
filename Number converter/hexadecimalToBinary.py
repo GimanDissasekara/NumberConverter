@@ -33,6 +33,6 @@ for line in f:
 
 #Print one by one Hexa decimal numbers
 for i in myNumList:
-     hex_input=i
-     binary_result = hex_to_binary_with_split(hex_input.upper())
-     print(binary_result)
+    hex_input=i
+    binary_result = hex_to_binary_with_split(hex_input.upper())
+    print(binary_result)

@@ -37,5 +37,5 @@ for line in f:
 #Print one by one Hexa decimal numbers
 for i in myNumList:
      binary_input=i
-     grouped_binary, hex_output = group_binary_and_convert_to_hex(binary_input)
-     print(hex_output)
+     grouped_binary, oct_output = group_binary_and_convert_to_hex(binary_input)
+     print(oct_output)
