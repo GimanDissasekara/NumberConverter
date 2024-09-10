@@ -27,6 +27,9 @@ def group_binary_and_convert_to_hex(binary_input):
 
 # Example usage:
 # binary_input = "10100.101"
+# grouped_binary, oct_output = group_binary_and_convert_to_hex(binary_input)
+# print(oct_output)
+
 
 # Open the textfile and add numbers for a list
 f = open('BinaryNumbers.txt','r')
@@ -34,7 +37,7 @@ myNumList = []
 for line in f:
     myNumList.append(line.strip())
 
-#Print one by one Hexa decimal numbers
+# Print one by one Hexa decimal numbers
 for i in myNumList:
      binary_input=i
      grouped_binary, oct_output = group_binary_and_convert_to_hex(binary_input)

@@ -8,16 +8,18 @@ def hex_digit_to_binary(hex_digit):
     except ValueError:
         return "Invalid hexadecimal digit"
 
+
 def hex_to_binary_with_split(hex_number):
     binary_result = ""
 
     for digit in hex_number:
-        if digit == '.':
-            binary_result += '.'
+        if digit == ".":
+            binary_result += "."
         else:
             binary_result += hex_digit_to_binary(digit)
 
     return binary_result
+
 
 # # Example usage:
 # hex_input = input("Enter a hexadecimal number: ")
@@ -25,14 +27,14 @@ def hex_to_binary_with_split(hex_number):
 
 # print(f"The binary equivalent of {hex_input} is: {binary_result}")
 
-#open the textfile and add numbers for a list
-f = open('HexadecimalNumbers.txt','r')
+# open the textfile and add numbers for a list
+f = open("HexadecimalNumbers.txt", "r")
 myNumList = []
 for line in f:
     myNumList.append(line.strip())
 
-#Print one by one Hexa decimal numbers
+# Print one by one Hexa decimal numbers
 for i in myNumList:
-    hex_input=i
+    hex_input = i
     binary_result = hex_to_binary_with_split(hex_input.upper())
     print(binary_result)
